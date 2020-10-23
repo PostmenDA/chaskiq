@@ -92,7 +92,7 @@ function App ({ dispatch, loading }) {
                     </p>
 
                     <div className="mt-5 sm:mt-8 mb-8 sm:flex sm:justify-center lg:justify-start">
-                      <div className="rounded-md shadow" style="display:none;">
+                      <div className="rounded-md shadow hidden">
                         <Link
                           to="/apps/new"
                           className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
