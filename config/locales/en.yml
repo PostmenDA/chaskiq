@@ -32,7 +32,7 @@ en:
     send_on_enter: Publish on enter
   home:
     welcome: Welcome to
-    welcome_site: Chaskiq
+    welcome_site: Accfarm
     tagline: Find your current applications here
     create_new: Create new app
     choose_lang: Choose language
@@ -86,7 +86,7 @@ en:
 
     user_menu:
       create_app: 'Create new app'
-      create_app_description: 'Create your company’s Chaskiq app'
+      create_app_description: 'Create your company’s Accfarm app'
       signout: Sign out
       title: User menu
 
@@ -281,9 +281,9 @@ en:
       title: Add this message as a Quick Reply
 
   new_app:
-    title: "Create your company’s Chaskiq app"
-    text: Provide basic information to setup Chaskiq for your team and customers.
-    hint: Create your company’s Chaskiq app
+    title: "Create your company’s Accfarm app"
+    text: Provide basic information to setup Accfarm for your team and customers.
+    hint: Create your company’s Accfarm app
   settings:
     api:
       title: Oauth Applications
