@@ -224,7 +224,7 @@ function MadeWithLove () {
   return (
     <p className="text-center text-sm leading-5 text-gray-500">
       {'powered by '}
-      <a href="https://chaskiq.io/">Chaskiq</a>
+      <a href="https://accfarm.com/">Accfarm</a>
       {' team.'}
     </p>
   )

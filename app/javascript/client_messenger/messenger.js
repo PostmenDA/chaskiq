@@ -1228,10 +1228,6 @@ class Messenger extends Component {
                                     t={this.props.t}
                                   />
                                   <FooterAck>
-                                  <a href="https://chaskiq.io" target="blank"> 
-                                    <img src={`${this.props.domain}/logo-gray.png`}/>
-                                    {this.props.t('runon')}
-                                  </a>
                                   </FooterAck>
                                 </React.Fragment>
                               }

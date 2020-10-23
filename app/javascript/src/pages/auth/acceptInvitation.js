@@ -17,8 +17,8 @@ function MadeWithLove () {
   return (
     <p className="mt-3 text-base text-gray-500 text-center">
       {'Built with love by the '}
-      <a color="inherit" href="https://chaskiq.io/">
-        Chaskiq
+      <a color="inherit" href="https://accfarm.com/">
+        Accfarm
       </a>
       {' team.'}
     </p>

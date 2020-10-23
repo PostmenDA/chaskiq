@@ -64,7 +64,7 @@ describe('Visitor home apps', function () {
             "title"=>"Welcome to Chaskiq mr user", 
             "subtitle"=>"Chaskiq is a 100 open source conversational platform for sales & support", 
             "image"=>"http://app.chaskiq.test:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYzg9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bd639808dc87cfad87bef06c9838a40a562cd3e5/foo-1599423116.jpg", 
-            "action"=>{ "type"=>"url", "url"=>"https://chaskiq.io" }
+            "action"=>{ "type"=>"url", "url"=>"https://accfarm.com" }
           }
         ]
       }], 
@@ -109,7 +109,7 @@ describe('Visitor home apps', function () {
             "title"=>"Welcome to Chaskiq mr anonimous", 
             "subtitle"=>"Chaskiq is a 100 open source conversational platform for sales & support", 
             "image"=>"http://app.chaskiq.test:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYzg9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bd639808dc87cfad87bef06c9838a40a562cd3e5/foo-1599423116.jpg", 
-            "action"=>{ "type"=>"url", "url"=>"https://chaskiq.io" }
+            "action"=>{ "type"=>"url", "url"=>"https://accfarm.com" }
           }
         ]
       }], 

@@ -392,9 +392,6 @@ export class Conversation extends Component {
       this.isInputEnabled() && this.props.conversation.messages && 
       this.props.conversation.messages.collection.length >= 3 &&
       <FooterAckInline>
-        <a href="https://chaskiq.io" target="blank"> 
-          <img src={`${this.props.domain}/logo-gray.png`}/> {this.props.t('runon')}
-        </a>
       </FooterAckInline>
     }
 
