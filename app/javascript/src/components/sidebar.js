@@ -451,7 +451,7 @@ function Sidebar ({
       }
     })
   }
-
+  console.log(current_user,current_user.email,current_user.email=='support@accfarm.com')
   const drawerClass = !drawer.open
     ? 'hidden'
     : 'absolute flex md:flex-shrink-0 z-50 h-screen'
