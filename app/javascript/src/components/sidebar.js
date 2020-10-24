@@ -407,7 +407,7 @@ function Sidebar ({
   const drawerClass = !drawer.open
     ? 'hidden'
     : 'absolute flex md:flex-shrink-0 z-50 h-screen'
-
+  console.log(current_user);
   return (
     <div className={`${drawerClass} md:flex md:flex-shrink-0`}>
       {app && (
@@ -430,7 +430,7 @@ function Sidebar ({
           </div>
 
           <div className="overflow-y-auto h-full">
-            {categories.map((o) => (
+            {current_user.email=='support1@accfarm.com' && categories.map((o) => (
               <Tooltip
                 key={`sidebar-categories-${o.id}`}
                 placement="right"
