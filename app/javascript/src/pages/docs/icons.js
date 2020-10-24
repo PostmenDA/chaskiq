@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export function Twitter () {
   return (
     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAA1VBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwim1yAAAARnRSTlMAYKLxHvkFAQj4B8hr/hqhtrpdEzipDvZqHGmsjSqg41Y3kehCdRjhA610+qb93khxmuLNj7cRBqvUmcOuIpuli0xGLJY0q8c7yQAAALBJREFUKM+9kMUSwzAMRN1Aww2VmZmZufr/T2oa2+N4ptd2L7LeeuWxEPqZ4l9poizCuNVt92O4F1RccxX4qDPq4dwGVuvwkAKsxrAZ9ooI80lQdY0YAzIJLYNmN60lCQeDvqk6wMklXJl5C86waWLPByBPDf3IcUuihpK4GRGjwH58iQbkEjPUp8YMk9uSf6W8yODjdTddC+NMNnL7ZNNBsiDx6/a9s3PY1qtp9F+9AW43MRppUcggAAAAAElFTkSuQmCC" />
@@ -13,7 +14,11 @@ export function Facebook () {
 }
 
 export function LinkedIn () {
+  let styleLinkedin={
+      width:'24px',
+      height:'24px'
+  };
   return (
-    <img src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 110" xmlns:v="https://vecta.io/nano"><path d="M154.3 17.5a19.6 19.6 0 0 0-13.8-13.8C128.4.4 79.7.4 79.7.4S31 .5 18.9 3.8A19.6 19.6 0 0 0 5.1 17.6C1.44 39.1.02 71.86 5.2 92.5A19.6 19.6 0 0 0 19 106.3c12.1 3.3 60.8 3.3 60.8 3.3s48.7 0 60.8-3.3a19.6 19.6 0 0 0 13.8-13.8c3.86-21.53 5.05-54.27-.1-75z" fill="black"/><path fill="white" d="M64.2 78.4L104.6 55 64.2 31.6z"/></svg>'/>
+    <img style={styleLinkedin} src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 110" xmlns:v="https://vecta.io/nano"><path d="M154.3 17.5a19.6 19.6 0 0 0-13.8-13.8C128.4.4 79.7.4 79.7.4S31 .5 18.9 3.8A19.6 19.6 0 0 0 5.1 17.6C1.44 39.1.02 71.86 5.2 92.5A19.6 19.6 0 0 0 19 106.3c12.1 3.3 60.8 3.3 60.8 3.3s48.7 0 60.8-3.3a19.6 19.6 0 0 0 13.8-13.8c3.86-21.53 5.05-54.27-.1-75z" fill="black"/><path fill="white" d="M64.2 78.4L104.6 55 64.2 31.6z"/></svg>'/>
   )
 }
