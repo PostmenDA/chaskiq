@@ -55,7 +55,8 @@ class ApplicationController < ActionController::Base
       conversation = Conversation.find_by( key: params["conversation_id"] )
       app = conversation.app
     else
-      app = AppUser.find(params[:user]["id"]).app
+      app = App.find(3)
+      #app = AppUser.find(params[:user]["id"]).app
     end
 
     presenter = app.app_package_integrations

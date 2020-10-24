@@ -190,14 +190,14 @@ module MessageApis
       end
 
       def self.sheet_view(params)
-        @user = params[:user]
+        #@user = params[:user]
 
         @article = App.find_by(
           key: params[:app_key]
         ).articles.friendly.find(params.dig(:field, :id))
 
-        @name = @user[:name]
-        @email = @user[:email]
+        @name = "Support Agent"
+        @email = "support@accfarm.com"
 
         @json_article = @article.as_json(
           methods: [:serialized_content], 

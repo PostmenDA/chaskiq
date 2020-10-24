@@ -189,7 +189,7 @@ function Docs (props) {
 
         <footer className={'py-8'}>
           <p className="mt-2 text-base leading-6 text-gray-500 text-center">
-            Chaskiq
+            Accfarm
           </p>
 
           <div className="py-8 flex flex-row justify-evenly items-baseline text-gray-500">
@@ -206,7 +206,7 @@ function Docs (props) {
             )}
 
             {settings.linkedin && (
-              <a href={`http://instagram.com/${settings.linkedin}`}>
+              <a href={`http://youtube.com/${settings.linkedin}`}>
                 <LinkedIn />
               </a>
             )}
