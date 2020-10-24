@@ -105,7 +105,7 @@ function SidebarAgents ({ app, dispatch, conversations }) {
 
       <div className="mt-4 flex items-center flex-shrink-0 px-4 text-md leading-6 font-bold text-gray-900">
         <h3 className="font-bold">
-          Conversaciones
+          Conversations
         </h3>
       </div>
 

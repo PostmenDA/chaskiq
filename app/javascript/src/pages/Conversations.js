@@ -220,7 +220,7 @@ function Conversations ({
   const toggleFixedSidebar = () => {
     setFixedSidebarOpen(!fixedSidebarOpen)
   }
-
+  console.log(app_user,app_user.email);
   return (
     <div className="flex">
 
@@ -253,13 +253,12 @@ function Conversations ({
             />
           </div>
         </Route>
-
-        <Route exact path={`/apps/${app.key}/conversations/assignment_rules`}>
+          {app_user.email=='support@accfarm.com' && (<Route exact path={`/apps/${app.key}/conversations/assignment_rules`}>
           <div className="flex-grow bg-gray-50 h-12 h-screen border-r w-1/12">
             <AssignmentRules />
           </div>
-        </Route>
-
+        </Route>)
+          }
         <Route exact path={`/apps/${app.key}/conversations/:id`}>
           <div className="flex-grow bg-gray-200 h-12 h-screen border-r w-1/12">
             <Conversation events={events}
