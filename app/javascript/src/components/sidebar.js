@@ -328,6 +328,54 @@ function Sidebar ({
       ]
     }
   ]
+  const categoriesAgent = [
+    {
+      id: 'Dashboard',
+      label: I18n.t('navigator.dashboard'),
+      icon: <BuildingIcon style={{ fontSize: 30 }} />,
+      url: `/apps/${app.key}`,
+      hidden: true,
+      children: [
+        /* {
+          id: 'campaigns', label: 'Mailing Campaigns',
+          icon: <EmailIcon/>,
+          url: `${appid}/messages/campaigns`,
+          active: isActivePage("campaigns")
+        } */
+        {
+          render: (props) => [
+            <div key={'dashboard-hey'}>
+              <p className="text-xs leading-5 text-gray-500 font-light"
+                dangerouslySetInnerHTML={
+                  { __html: I18n.t('dashboard.hey', { name: app.name }) }
+                }/>
+              <WebSetup />
+            </div>
+          ]
+        }
+      ]
+    },
+    {
+      id: 'Conversations',
+      label: I18n.t('navigator.conversations'),
+      icon: <ConversationIcon style={{ fontSize: 30 }} />,
+      url: `/apps/${app.key}/conversations`,
+      children: [
+        {
+          id: 'Conversations',
+          label: I18n.t('navigator.childs.conversations'),
+          icon: <MessageBubbleIcon />,
+          url: `/apps/${app.key}/conversations`,
+          active: isActivePage('Conversations')
+        },
+        {
+          render: () => [
+            <SidebarAgents/>
+          ]
+        }
+      ]
+    }
+  ]
 
   function handleDrawer () {
     dispatch(toggleDrawer({ open: !drawer.open }))
@@ -407,7 +455,6 @@ function Sidebar ({
   const drawerClass = !drawer.open
     ? 'hidden'
     : 'absolute flex md:flex-shrink-0 z-50 h-screen'
-  console.log(current_user);
   return (
     <div className={`${drawerClass} md:flex md:flex-shrink-0`}>
       {app && (
@@ -430,7 +477,7 @@ function Sidebar ({
           </div>
 
           <div className="overflow-y-auto h-full">
-            {current_user.email=='support1@accfarm.com' && categories.map((o) => (
+            {current_user.email=='support@accfarm.com' && categories.map((o) => (
               <Tooltip
                 key={`sidebar-categories-${o.id}`}
                 placement="right"
@@ -455,6 +502,32 @@ function Sidebar ({
                   )}
                 </div>
               </Tooltip>
+            ))}
+            {current_user.email!='support@accfarm.com' && categoriesAgent.map((o) => (
+                  <Tooltip
+                      key={`sidebar-categories-${o.id}`}
+                      placement="right"
+                      overlay={o.label}
+                  >
+                      <div
+                          className="cursor-pointer mb-4 p-3
+                          bg-gray-200 hover:bg-gray-100 rounded-md"
+                      >
+                          {o.url && (
+                              <Link
+                                  to={`${o.url}`}
+                                  aria-label={o.label}
+                                  className="bg-indigo-lighter
+                      h-12 w-12 flex-- items-center
+                      justify-center-- text-black
+                      text-2xl font-semibold rounded-lg
+                      mb-1 overflow-hidden text-gray-400"
+                              >
+                                  {o.icon}
+                              </Link>
+                          )}
+                      </div>
+                  </Tooltip>
             ))}
           </div>
         </div>
