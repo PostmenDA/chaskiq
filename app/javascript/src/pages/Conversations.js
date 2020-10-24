@@ -220,7 +220,7 @@ function Conversations ({
   const toggleFixedSidebar = () => {
     setFixedSidebarOpen(!fixedSidebarOpen)
   }
-  console.log(app_user,app_user.email);
+  console.log(app);
   return (
     <div className="flex">
 
